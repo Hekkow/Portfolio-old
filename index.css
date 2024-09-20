@@ -1,0 +1,33 @@
+:root {
+    --scroll-menu-width: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.panel {
+    width: 100%;
+    height: 100vh;
+}
+#scrollMenu {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--scroll-menu-width);
+}
+.scrollMenuButton {
+    width: var(--scroll-menu-width);
+    height: var(--scroll-menu-width);
+    border-radius: var(--scroll-menu-width);
+    border: 3px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 5px 0;
+    cursor: pointer;
+    box-shadow: 0 10px 10px 1px white;
+}
+.selected {
+    border: 3px solid red;
+
+}
